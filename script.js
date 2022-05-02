@@ -13,11 +13,25 @@ icons.addEventListener("click", () => {
 
 
 
-about.addEventListener('click', aboutt);
+$('.about-detail').hide();
+// $('.about-me').click(function(){
+//   $('.about-detail').toggle();
+// });
+$('.about-me').on({
+  mouseenter:function(){
+    $('.about-detail').show();
+  },
+  mouseleave:function(){
+    $('.about-detail').hide();
+  },
 
-function aboutt() {
-  about_detail.classList.toggle("active-about");
-}
+})
+
+// about.addEventListener('click', aboutt);
+//
+// function aboutt() {
+//   about_detail.classList.toggle("active-about");
+// }
 
 
 resetButt.addEventListener('click', reset);
