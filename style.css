@@ -94,9 +94,6 @@ section {
   min-width: 50%;
 }
 
-/* .sec2{
-  max-height: 500px;
-} */
 .about-detail {
   background-color:  #ccccb3;
   width: 100%;
@@ -105,7 +102,7 @@ section {
   border-radius: 5px;
   padding: 5px 15px 15px 15px;;
 
-  transition: 0.3 ease;
+  transition: 0.50s ease;
   pointer-events: none;
   justify-content: center;
   align-items: center;
@@ -116,6 +113,8 @@ section {
   font-size: 0.8em;
   line-height: 20px;
   flex-wrap: wrap;
+
+  opacity: 0;
 
 
 }
@@ -142,9 +141,6 @@ section {
   transform: scale(1.05);
 }
 
-.qoute{
-  text-
-}
 
 
 .button-main:hover {
