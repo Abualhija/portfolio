@@ -133,7 +133,7 @@ resetButton.addEventListener("click", () => {
 })
 });
 
-
+document.querySelector(".date-year").innerHTML=new Date().getFullYear();
 // $(document).ready(function(){
 //   $(".about-me2").click(function(){
 //     $(".about-detail").toggle({
