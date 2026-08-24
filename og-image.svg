@@ -1,0 +1,23 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="630" fill="#07100F"/>
+  <path d="M0 120H1200M0 240H1200M0 360H1200M0 480H1200M180 0V630M360 0V630M540 0V630M720 0V630M900 0V630M1080 0V630" stroke="#D8FFF5" stroke-opacity=".035"/>
+  <circle cx="1045" cy="92" r="330" fill="url(#a)" fill-opacity=".18"/>
+  <circle cx="130" cy="590" r="280" fill="url(#b)" fill-opacity=".12"/>
+  <rect x="72" y="68" width="70" height="70" rx="20" fill="#8DF6B6" fill-opacity=".12" stroke="#8DF6B6" stroke-opacity=".4"/>
+  <text x="107" y="113" fill="#8DF6B6" font-family="Arial, sans-serif" font-size="22" font-weight="700" text-anchor="middle">SA</text>
+  <rect x="914" y="75" width="214" height="45" rx="22.5" fill="#8DF6B6" fill-opacity=".08" stroke="#8DF6B6" stroke-opacity=".25"/>
+  <circle cx="942" cy="97.5" r="5.5" fill="#8DF6B6"/>
+  <text x="960" y="103" fill="#C8DAD5" font-family="Arial, sans-serif" font-size="14" font-weight="700" letter-spacing="1.4">QA ENGINEER</text>
+  <text x="72" y="265" fill="#F0F7F5" font-family="Arial, sans-serif" font-size="76" font-weight="700" letter-spacing="-3">Suhaib Abu-Alhija</text>
+  <text x="72" y="352" fill="url(#c)" font-family="Arial, sans-serif" font-size="70" font-weight="700" letter-spacing="-3">Release confidence.</text>
+  <text x="76" y="415" fill="#93AAA4" font-family="Arial, sans-serif" font-size="24">Test automation · Payments · APIs · Accessibility</text>
+  <rect x="72" y="505" width="258" height="58" rx="14" fill="#8DF6B6"/>
+  <text x="201" y="541" fill="#062014" font-family="Arial, sans-serif" font-size="18" font-weight="700" text-anchor="middle">QUALITY, ENGINEERED.</text>
+  <path d="M1000 470H1128V540H1000V470Z" fill="#0E1D1A" stroke="#D8FFF5" stroke-opacity=".14"/>
+  <path d="M1027 503L1051 525L1101 483" stroke="#8DF6B6" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <defs>
+    <radialGradient id="a"><stop stop-color="#69DDFF"/><stop offset="1" stop-color="#69DDFF" stop-opacity="0"/></radialGradient>
+    <radialGradient id="b"><stop stop-color="#8DF6B6"/><stop offset="1" stop-color="#8DF6B6" stop-opacity="0"/></radialGradient>
+    <linearGradient id="c" x1="72" y1="310" x2="780" y2="390" gradientUnits="userSpaceOnUse"><stop stop-color="#8DF6B6"/><stop offset="1" stop-color="#69DDFF"/></linearGradient>
+  </defs>
+</svg>

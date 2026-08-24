@@ -1,0 +1,16 @@
+{
+  "name": "Suhaib Abu-Alhija | QA Engineer",
+  "short_name": "Suhaib QA",
+  "description": "QA Engineer specializing in automation, payments, APIs, and accessibility.",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#07100f",
+  "theme_color": "#07100f",
+  "icons": [
+    {
+      "src": "favicon-32x32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    }
+  ]
+}
