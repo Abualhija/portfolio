@@ -8,6 +8,8 @@
   const themeToggle = document.querySelector("[data-theme-toggle]");
   const progressBar = document.querySelector(".scroll-progress span");
   const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const compactDevice = window.matchMedia("(max-width: 840px), (pointer: coarse)").matches;
+  const lightweightMotion = reduceMotion || compactDevice;
 
   const setTheme = (theme) => {
     root.dataset.theme = theme;
@@ -80,7 +82,7 @@
   );
   updateScrollUI();
 
-  if (!reduceMotion) {
+  if (!lightweightMotion) {
     window.addEventListener(
       "pointermove",
       (event) => {
@@ -97,7 +99,7 @@
     item.style.setProperty("--reveal-delay", `${delay}ms`);
   });
 
-  if (reduceMotion || !("IntersectionObserver" in window)) {
+  if (lightweightMotion || !("IntersectionObserver" in window)) {
     revealItems.forEach((item) => item.classList.add("is-visible"));
   } else {
     const revealObserver = new IntersectionObserver(
@@ -134,7 +136,7 @@
   };
 
   const metrics = document.querySelectorAll("[data-count]");
-  if (reduceMotion || !("IntersectionObserver" in window)) {
+  if (lightweightMotion || !("IntersectionObserver" in window)) {
     metrics.forEach((metric) => {
       const decimals = Number(metric.dataset.decimals || 0);
       metric.textContent = `${metric.dataset.prefix || ""}${Number(metric.dataset.count).toFixed(decimals)}${metric.dataset.suffix || ""}`;
@@ -181,7 +183,7 @@
     const rows = [...document.querySelectorAll("[data-test-row]")];
     const consoleCard = document.querySelector(".quality-console");
 
-    if (reduceMotion) {
+    if (lightweightMotion) {
       rows.forEach((row) => {
         row.classList.add("is-passed");
         row.querySelector(".test-status").textContent = "passed";
@@ -209,7 +211,7 @@
 
   runTests();
 
-  if (!reduceMotion && window.matchMedia("(hover: hover)").matches) {
+  if (!lightweightMotion && window.matchMedia("(hover: hover)").matches) {
     document.querySelectorAll("[data-tilt]").forEach((card) => {
       card.addEventListener("pointermove", (event) => {
         const rect = card.getBoundingClientRect();
